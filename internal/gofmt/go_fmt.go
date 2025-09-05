@@ -111,7 +111,7 @@ func (ft *Formatter) execute(opt *Options) error {
 	return nil
 }
 
-func (ft *Formatter) printFmtResult(fileName string, change bool, event string, color common.ConsoleColor, err error) {
+func (ft *Formatter) printFmtResult(fileName string, change bool, event string, displayPrettyOrSkipped bool, color common.ConsoleColor, err error) {
 	if ft.PrintResult != nil {
 		ft.PrintResult(fileName, change, err)
 		return
@@ -121,6 +121,11 @@ func (ft *Formatter) printFmtResult(fileName string, change bool, event string, 
 		txt += " " + err.Error()
 	}
 	txt = color(txt)
+	if event == "pretty" || event == "skipped" {
+		if !displayPrettyOrSkipped {
+			return
+		}
+	}
 	fmt.Fprint(os.Stderr, txt, "\n")
 }
 
@@ -149,7 +154,7 @@ func (ft *Formatter) doFormat(opt *Options, fileName string) (bool, error) {
 	ft.execCallBack(opt, fileName, originSrc, prettySrc, err)
 	changed := !bytes.Equal(originSrc, prettySrc)
 	if err != nil {
-		ft.printFmtResult(fileName, true, "error", common.ConsoleRed, err)
+		ft.printFmtResult(fileName, true, "error", opt.DisplayPrettyOrSkipped, common.ConsoleRed, err)
 		return changed, err
 	}
 
@@ -158,21 +163,21 @@ func (ft *Formatter) doFormat(opt *Options, fileName string) (bool, error) {
 		return changed, nil
 	}
 
-	if !changed && opt.DisplayPrettyOrSkipped {
+	if !changed {
 		if formatted {
-			ft.printFmtResult(fileName, false, "pretty", common.ConsoleGreen, nil)
+			ft.printFmtResult(fileName, false, "pretty", opt.DisplayPrettyOrSkipped, common.ConsoleGreen, nil)
 		} else {
-			ft.printFmtResult(fileName, false, "skipped", common.ConsoleGrey, nil)
+			ft.printFmtResult(fileName, false, "skipped", opt.DisplayPrettyOrSkipped, common.ConsoleGrey, nil)
 		}
 		return changed, nil
 	}
 
 	if opt.Write {
 		err = os.WriteFile(fileName, prettySrc, 0)
-		ft.printFmtResult(fileName, true, "rewrote", common.ConsoleRed, err)
+		ft.printFmtResult(fileName, true, "rewrote", opt.DisplayPrettyOrSkipped, common.ConsoleRed, err)
 		return changed, err
 	} else if opt.DisplayDiff {
-		ft.printFmtResult(fileName, true, "ugly", common.ConsoleRed, nil)
+		ft.printFmtResult(fileName, true, "ugly", opt.DisplayPrettyOrSkipped, common.ConsoleRed, nil)
 	}
 
 	return changed, nil
