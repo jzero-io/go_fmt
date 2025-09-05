@@ -11,7 +11,7 @@ import (
 
 	"golang.org/x/tools/imports"
 
-	"github.com/fsgo/go_fmt/internal/ximports"
+	"github.com/jzero-io/go_fmt/internal/ximports"
 )
 
 //export a

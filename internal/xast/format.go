@@ -8,7 +8,7 @@ import (
 	"go/ast"
 	"go/token"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 // Format 其他一下高级规则

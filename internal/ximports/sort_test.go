@@ -9,7 +9,7 @@ import (
 
 	"github.com/fsgo/fst"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 func Test_sortImportDecls(t *testing.T) {

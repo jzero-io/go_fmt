@@ -8,7 +8,7 @@ package input
 
 import (
 	"fmt" // fmt 后面的注释
-	"github.com/fsgo/go_fmt/internal/ximports"
+	"github.com/jzero-io/go_fmt/internal/ximports"
 	
 	/**
 	  * 多行注释1

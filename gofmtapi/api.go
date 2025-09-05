@@ -5,8 +5,8 @@
 package gofmtapi
 
 import (
-	"github.com/fsgo/go_fmt/internal/common"
-	"github.com/fsgo/go_fmt/internal/gofmt"
+	"github.com/jzero-io/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/gofmt"
 )
 
 // Formatter 格式化工具类

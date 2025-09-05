@@ -5,7 +5,7 @@
 package xanalysis
 
 import (
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 // Format 基于类型检查、语法检查等优化

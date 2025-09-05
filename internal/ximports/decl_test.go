@@ -24,9 +24,9 @@ func Test_importDecl_RealPath(t *testing.T) {
 				Comments: []string{
 					`"github.com/fsgo/cache"`,
 				},
-				Path: `"github.com/fsgo/go_fmt"`,
+				Path: `"github.com/jzero-io/go_fmt"`,
 			},
-			want: `github.com/fsgo/go_fmt`,
+			want: `github.com/jzero-io/go_fmt`,
 		},
 		{
 			name: "case 2",
@@ -34,9 +34,9 @@ func Test_importDecl_RealPath(t *testing.T) {
 				Comments: []string{
 					`"github.com/fsgo/cache"`,
 				},
-				Path: `go_fmt "github.com/fsgo/go_fmt"`,
+				Path: `go_fmt "github.com/jzero-io/go_fmt"`,
 			},
-			want: `github.com/fsgo/go_fmt`,
+			want: `github.com/jzero-io/go_fmt`,
 		},
 		{
 			name: "case 3",
@@ -44,9 +44,9 @@ func Test_importDecl_RealPath(t *testing.T) {
 				Comments: []string{
 					`"github.com/fsgo/cache"`,
 				},
-				Path: `_ "github.com/fsgo/go_fmt"`,
+				Path: `_ "github.com/jzero-io/go_fmt"`,
 			},
-			want: `github.com/fsgo/go_fmt`,
+			want: `github.com/jzero-io/go_fmt`,
 		},
 		{
 			name: "case 4",
@@ -54,9 +54,9 @@ func Test_importDecl_RealPath(t *testing.T) {
 				Comments: []string{
 					`"github.com/fsgo/cache"`,
 				},
-				Path: `_"github.com/fsgo/go_fmt"`,
+				Path: `_"github.com/jzero-io/go_fmt"`,
 			},
-			want: `github.com/fsgo/go_fmt`,
+			want: `github.com/jzero-io/go_fmt`,
 		},
 		{
 			name: "case 5",
@@ -64,9 +64,9 @@ func Test_importDecl_RealPath(t *testing.T) {
 				Comments: []string{
 					`"github.com/fsgo/cache"`,
 				},
-				Path: `gofmt"github.com/fsgo/go_fmt"`,
+				Path: `gofmt"github.com/jzero-io/go_fmt"`,
 			},
-			want: `github.com/fsgo/go_fmt`,
+			want: `github.com/jzero-io/go_fmt`,
 		},
 		{
 			name: "case 6",
@@ -114,9 +114,9 @@ func Test_importDecl_RealPath(t *testing.T) {
 		{
 			name: "case 11",
 			fields: fields{
-				Path: "go_fmt `github.com/fsgo/go_fmt`",
+				Path: "go_fmt `github.com/jzero-io/go_fmt`",
 			},
-			want: `github.com/fsgo/go_fmt`,
+			want: `github.com/jzero-io/go_fmt`,
 		},
 	}
 	for _, tt := range tests {

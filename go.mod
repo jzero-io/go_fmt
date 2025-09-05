@@ -1,4 +1,4 @@
-module github.com/fsgo/go_fmt
+module github.com/jzero-io/go_fmt
 
 go 1.23.0
 

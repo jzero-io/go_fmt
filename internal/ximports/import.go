@@ -17,7 +17,7 @@ import (
 	"strings"
 
 	// internal common 上面
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 // FormatImports 格式化 import 部分

@@ -13,7 +13,7 @@ import (
 
 	"golang.org/x/tools/go/ast/astutil"
 
-	"github.com/fsgo/go_fmt/internal/xpasser"
+	"github.com/jzero-io/go_fmt/internal/xpasser"
 )
 
 type cCallExpr struct {

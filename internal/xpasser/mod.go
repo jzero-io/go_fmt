@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 // TryGoModTidy 更新 go.sum 文件

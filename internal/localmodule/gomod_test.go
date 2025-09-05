@@ -7,7 +7,7 @@ package localmodule
 import (
 	"testing"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 func Test_detectByGoMod(t *testing.T) {
@@ -16,7 +16,7 @@ func Test_detectByGoMod(t *testing.T) {
 	if err != nil {
 		t.Fatalf("detectByGoMod() with error:%s", err)
 	}
-	want := "github.com/fsgo/go_fmt"
+	want := "github.com/jzero-io/go_fmt"
 	if got != want {
 		t.Fatalf("detectByGoMod() =%q, want=%q", got, want)
 	}

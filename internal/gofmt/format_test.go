@@ -13,7 +13,7 @@ import (
 
 	"github.com/fsgo/fst"
 
-	"github.com/fsgo/go_fmt/internal/xpasser"
+	"github.com/jzero-io/go_fmt/internal/xpasser"
 )
 
 func TestFormat_rule1(t *testing.T) {

@@ -14,7 +14,7 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 // Format call simplify

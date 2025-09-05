@@ -18,7 +18,7 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/fsgo/go_fmt/internal/version"
+	"github.com/jzero-io/go_fmt/internal/version"
 )
 
 // ImportGroupFunc import 排序逻辑
@@ -31,6 +31,9 @@ type Options struct {
 
 	// DisplayFormat 输出 DisplayDiff 的格式，默认为 text，还可以是 json
 	DisplayFormat string
+
+	// DisplayPretty 是否打印已经格式化了的文件
+	DisplayPretty bool
 
 	// import 分组的排序规则,可选
 	// 总共 可分为 3 组，分别是 标准库(简称 s)，第三方库(简称 t)，模块自身(简称 c)
@@ -225,6 +228,7 @@ func (opt *Options) BindFlags() {
 	commandLine.BoolVar(&opt.Write, "w", opt.Write, "write result to (source) file instead of stdout")
 	commandLine.BoolVar(&opt.DisplayDiff, "d", false, "display diffs instead of rewriting files")
 	commandLine.StringVar(&opt.DisplayFormat, "df", "text", "display diffs format, support: text, json")
+	commandLine.BoolVar(&opt.DisplayPretty, "dp", false, "display pretty code")
 	commandLine.BoolVar(&opt.Simplify, "s", opt.Simplify, "simplify code")
 	commandLine.StringVar(&opt.LocalModule, "local", "auto",
 		`current package path, will put imports beginning with this string as 3rd-party packages.
@@ -263,9 +267,9 @@ with env 'GORGEOUS_RR=false' to set default value as false
 
 		titleFormat := "%15s : %s\n"
 		fmt.Fprintf(os.Stderr, titleFormat, "build with", runtime.Version())
-		fmt.Fprintf(os.Stderr, titleFormat, "site", "https://github.com/fsgo/go_fmt")
+		fmt.Fprintf(os.Stderr, titleFormat, "site", "https://github.com/jzero-io/go_fmt")
 
-		installPath := "github.com/fsgo/go_fmt/cmd/gorgeous"
+		installPath := "github.com/jzero-io/go_fmt/cmd/gorgeous"
 		if bi, ok := debug.ReadBuildInfo(); ok {
 			installPath = bi.Path
 		}

@@ -9,7 +9,7 @@ import (
 	"go/ast"
 	"go/types"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 func TypeOf(req *common.Request, e ast.Expr) (types.Type, error) {

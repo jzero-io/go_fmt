@@ -17,7 +17,7 @@ go env GOMOD
 bin/
      go_fmt                               # command executable
  src/
-    github.com/fsgo/go_fmt/
+    github.com/jzero-io/go_fmt/
                            .git/          # Git repository metadata
                             go_fmt.go     # command source
  基本原理为：

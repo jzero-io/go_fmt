@@ -8,7 +8,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 var detectAutoFuncs = []func(opt common.Options, fileName string) (string, error){

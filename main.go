@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/fsgo/go_fmt/gofmtapi"
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/gofmtapi"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 func main() {

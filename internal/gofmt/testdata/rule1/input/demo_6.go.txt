@@ -7,7 +7,7 @@
 package input
 
 import (
-	"github.com/fsgo/go_fmt/internal/ximports"
+	"github.com/jzero-io/go_fmt/internal/ximports"
 	"golang.org/x/tools/imports"
 	"fmt"
 	_ "share"

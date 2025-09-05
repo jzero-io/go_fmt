@@ -14,7 +14,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/fsgo/go_fmt/internal/pkgs/std"
+	"github.com/jzero-io/go_fmt/internal/pkgs/std"
 )
 
 var out = flag.String("out", "", "输出文件")

@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 type importDecl struct {

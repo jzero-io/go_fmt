@@ -8,7 +8,7 @@ import (
 	"go/ast"
 	"go/token"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 // dealWithInspect 删除多余的空行

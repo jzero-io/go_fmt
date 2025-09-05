@@ -7,8 +7,8 @@ package ximports
 import (
 	"sort"
 
-	"github.com/fsgo/go_fmt/internal/common"
-	"github.com/fsgo/go_fmt/internal/pkgs"
+	"github.com/jzero-io/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/pkgs"
 )
 
 func defaultImportGroup(importPath string, opt common.Options) int {

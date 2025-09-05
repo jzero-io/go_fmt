@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/fsgo/go_fmt/internal/pkgs/std"
+	"github.com/jzero-io/go_fmt/internal/pkgs/std"
 )
 
 //go:generate go run cmd/update_std_static.go -out std_static.go

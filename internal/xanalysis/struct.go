@@ -9,8 +9,8 @@ import (
 	"go/types"
 	"log"
 
-	"github.com/fsgo/go_fmt/internal/common"
-	"github.com/fsgo/go_fmt/internal/xpasser"
+	"github.com/jzero-io/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/xpasser"
 )
 
 func fixStruct(req *common.Request) {

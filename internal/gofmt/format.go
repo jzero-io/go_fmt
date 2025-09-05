@@ -9,13 +9,13 @@ import (
 	"log"
 	"os"
 
-	"github.com/fsgo/go_fmt/internal/common"
-	"github.com/fsgo/go_fmt/internal/localmodule"
-	"github.com/fsgo/go_fmt/internal/simplify"
-	"github.com/fsgo/go_fmt/internal/xanalysis"
-	"github.com/fsgo/go_fmt/internal/xast"
-	"github.com/fsgo/go_fmt/internal/ximports"
-	"github.com/fsgo/go_fmt/internal/xpasser"
+	"github.com/jzero-io/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/localmodule"
+	"github.com/jzero-io/go_fmt/internal/simplify"
+	"github.com/jzero-io/go_fmt/internal/xanalysis"
+	"github.com/jzero-io/go_fmt/internal/xast"
+	"github.com/jzero-io/go_fmt/internal/ximports"
+	"github.com/jzero-io/go_fmt/internal/xpasser"
 )
 
 // Options 别名

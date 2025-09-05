@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 // detectByGoPath 通过文件绝对路径来自动推断当前项目的模块名
@@ -19,7 +19,7 @@ import (
 // | bin/
 // |     go_fmt                               # command executable
 // | src/
-// |    github.com/fsgo/go_fmt/
+// |    github.com/jzero-io/go_fmt/
 // |                           .git/          # Git repository metadata
 // |                            go_fmt.go     # command source
 // 基本原理为：

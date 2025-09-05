@@ -7,7 +7,7 @@ package localmodule
 import (
 	"log"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 // 通过项目的 go.mod 文件来获取项目的 module 值

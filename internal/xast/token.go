@@ -8,7 +8,7 @@ import (
 	"go/ast"
 	"go/token"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 // nodeEndPos 查找当前节点的结尾的 Pos

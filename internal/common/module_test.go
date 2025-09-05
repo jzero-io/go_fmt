@@ -24,7 +24,7 @@ func TestModuleByFile(t *testing.T) {
 			args: args{
 				goModPath: "testdata/mod_ok.txt",
 			},
-			want: "github.com/fsgo/go_fmt",
+			want: "github.com/jzero-io/go_fmt",
 		},
 		{
 			name: "mod_err.txt",

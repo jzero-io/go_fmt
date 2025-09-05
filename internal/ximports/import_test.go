@@ -14,8 +14,8 @@ import (
 
 	"github.com/fsgo/fst"
 
-	"github.com/fsgo/go_fmt/internal/common"
-	"github.com/fsgo/go_fmt/internal/xtest"
+	"github.com/jzero-io/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/xtest"
 )
 
 func Test_isImportPathLine(t *testing.T) {

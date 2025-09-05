@@ -13,8 +13,8 @@ import (
 	"os"
 	"sync"
 
-	"github.com/fsgo/go_fmt/internal/common"
-	"github.com/fsgo/go_fmt/internal/xpasser"
+	"github.com/jzero-io/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/xpasser"
 )
 
 // NewFormatter 创建一个新的带默认格式化规则的格式化实例
@@ -159,7 +159,7 @@ func (ft *Formatter) doFormat(opt *Options, fileName string) (bool, error) {
 	}
 
 	if !changed {
-		if formatted {
+		if formatted && opt.DisplayPretty {
 			ft.printFmtResult(fileName, false, "pretty", common.ConsoleGreen, nil)
 		} else {
 			ft.printFmtResult(fileName, false, "skipped", common.ConsoleGrey, nil)

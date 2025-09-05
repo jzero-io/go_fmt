@@ -19,7 +19,7 @@ import (
 
 	"golang.org/x/tools/go/packages"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 // Program 一个应用

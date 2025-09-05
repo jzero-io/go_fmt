@@ -14,9 +14,9 @@ import (
 	"github.com/fsgo/fst"
 	"golang.org/x/tools/go/packages"
 
-	"github.com/fsgo/go_fmt/internal/common"
-	"github.com/fsgo/go_fmt/internal/gofmt"
-	"github.com/fsgo/go_fmt/internal/xpasser"
+	"github.com/jzero-io/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/gofmt"
+	"github.com/jzero-io/go_fmt/internal/xpasser"
 )
 
 func TestFormatter_Execute(t *testing.T) {

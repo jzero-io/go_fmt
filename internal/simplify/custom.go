@@ -10,8 +10,8 @@ import (
 
 	"golang.org/x/tools/go/ast/astutil"
 
-	"github.com/fsgo/go_fmt/internal/common"
-	"github.com/fsgo/go_fmt/internal/xpasser"
+	"github.com/jzero-io/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/xpasser"
 )
 
 // customSimplify 自定义的简化规则

@@ -9,7 +9,7 @@ import (
 	"go/token"
 	"strings"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 // FormatComments 对代码注释进行格式化

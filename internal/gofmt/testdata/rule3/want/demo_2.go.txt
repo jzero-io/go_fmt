@@ -17,7 +17,7 @@ import (
 	// imports 上面的注释后面的注释
 	"golang.org/x/tools/imports"
 
-	"github.com/fsgo/go_fmt/internal/ximports"
+	"github.com/jzero-io/go_fmt/internal/ximports"
 )
 
 // 这里有注释1

@@ -9,7 +9,7 @@ import (
 	"go/token"
 	"reflect"
 
-	"github.com/fsgo/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/common"
 )
 
 type simplifier struct{}

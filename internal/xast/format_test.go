@@ -7,8 +7,8 @@ package xast
 import (
 	"testing"
 
-	"github.com/fsgo/go_fmt/internal/common"
-	"github.com/fsgo/go_fmt/internal/xtest"
+	"github.com/jzero-io/go_fmt/internal/common"
+	"github.com/jzero-io/go_fmt/internal/xtest"
 )
 
 func TestFormat(t *testing.T) {

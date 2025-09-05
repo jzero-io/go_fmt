@@ -12,7 +12,7 @@ import (
 	"golang.org/x/tools/imports"
 	_ "share"
 
-	"github.com/fsgo/go_fmt/internal/ximports"
+	"github.com/jzero-io/go_fmt/internal/ximports"
 )
 
 func a() {
