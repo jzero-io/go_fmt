@@ -158,8 +158,8 @@ func (ft *Formatter) doFormat(opt *Options, fileName string) (bool, error) {
 		return changed, nil
 	}
 
-	if !changed {
-		if formatted && opt.DisplayPretty {
+	if !changed && opt.DisplayPrettyOrSkipped {
+		if formatted {
 			ft.printFmtResult(fileName, false, "pretty", common.ConsoleGreen, nil)
 		} else {
 			ft.printFmtResult(fileName, false, "skipped", common.ConsoleGrey, nil)

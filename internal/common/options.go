@@ -32,8 +32,8 @@ type Options struct {
 	// DisplayFormat 输出 DisplayDiff 的格式，默认为 text，还可以是 json
 	DisplayFormat string
 
-	// DisplayPretty 是否打印已经格式化了的文件
-	DisplayPretty bool
+	// DisplayPretty 是否打印已经格式化了或者跳过的文件
+	DisplayPrettyOrSkipped bool
 
 	// import 分组的排序规则,可选
 	// 总共 可分为 3 组，分别是 标准库(简称 s)，第三方库(简称 t)，模块自身(简称 c)
@@ -228,7 +228,7 @@ func (opt *Options) BindFlags() {
 	commandLine.BoolVar(&opt.Write, "w", opt.Write, "write result to (source) file instead of stdout")
 	commandLine.BoolVar(&opt.DisplayDiff, "d", false, "display diffs instead of rewriting files")
 	commandLine.StringVar(&opt.DisplayFormat, "df", "text", "display diffs format, support: text, json")
-	commandLine.BoolVar(&opt.DisplayPretty, "dp", false, "display pretty code")
+	commandLine.BoolVar(&opt.DisplayPrettyOrSkipped, "dps", false, "display pretty or skipped code")
 	commandLine.BoolVar(&opt.Simplify, "s", opt.Simplify, "simplify code")
 	commandLine.StringVar(&opt.LocalModule, "local", "auto",
 		`current package path, will put imports beginning with this string as 3rd-party packages.
